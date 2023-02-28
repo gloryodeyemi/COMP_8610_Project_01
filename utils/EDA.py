@@ -9,13 +9,13 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # styling
-plt.style.use("ggplot")
+# plt.style.use("ggplot")
 rcParams['figure.figsize'] = (30, 15)
 
 # plot histogram
 def histogram(data):
     data.hist()
-    plt.savefig('images/histogram.png')
+    plt.savefig('histogram.png')
     plt.show()
 
 # create 8x3 subplot
@@ -34,7 +34,8 @@ def bivariate_analysis(data):
 
     # hide last subplot
     plt.subplot(8, 3, 24).set_visible(False)
-    plt.savefig('images/subplots.png')
+    plt.legend(data['target'])
+    plt.savefig('subplots.png')
     plt.show()
 
 # plot heatmap 
@@ -49,6 +50,6 @@ def get_correlation(data):
                      yticklabels=data.columns, 
                      xticklabels=data.columns, 
                      cmap="Spectral_r")
-    plt.savefig('images/heatmap.png')
+    plt.savefig('heatmap.png')
     plt.show()
 
