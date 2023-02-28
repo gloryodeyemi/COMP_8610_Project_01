@@ -34,7 +34,7 @@ def bivariate_analysis(data):
 
     # hide last subplot
     plt.subplot(8, 3, 24).set_visible(False)
-    plt.legend(data['target'])
+#     plt.legend(data['target'])
     plt.savefig('subplots.png')
     plt.show()
 
