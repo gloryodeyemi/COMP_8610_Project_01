@@ -94,11 +94,17 @@ def compile_model_adam(model):
     model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
     
 # compile the model with SGD optimizer
-def compile_model_sdg(model):
+def compile_model_sgd(model):
     print("Compiling the model with SGD optimizer...")
     print("-----------------------------------------")
     opt = SGD(lr=0.01, momentum=0.9)
     model.compile(optimizer=opt, loss='binary_crossentropy', metrics=['accuracy'])
+    
+# compile the model with AdaGrad optimizer
+def compile_model_adagrad(model):   
+    print("Compiling the model with AdaGrad optimizer...")
+    print("---------------------------------------------")
+    model.compile(optimizer='AdaGrad', loss='binary_crossentropy', metrics=['accuracy'])
 
 # train the model
 def train_model(model, x_train, y_train):
