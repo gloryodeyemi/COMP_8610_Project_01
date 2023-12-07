@@ -1,5 +1,5 @@
 # Supervised Model for Predicting Default of Credit Card Clients
-The goal of this experiment is to build a Multi-Layer Perceptron (MLP), a Deep Neural Network (DNN) model to predict the deafault of credit card clients.
+The goal of this experiment is to build a Multi-Layer Perceptron (MLP), a Deep Neural Network (DNN) model, to predict the default of credit card clients.
 
 **Keywords:** DNN, MLP, Supervised model, Prediction
 
@@ -21,13 +21,8 @@ pip install -r requirements.txt
 
 * **[models](https://github.com/gloryodeyemi/COMP_8610_Project_01/tree/main/models):** contains the models generated in the experiment.
 
-* **[Project_01.ipynb](https://github.com/gloryodeyemi/COMP_8610_Project_01/blob/main/Project_01.ipynb):** a python notebook that shows the procedure of building, training, and evaluating the MLP model and the results gotten. It uses the functions in the utils to achieve this.
+* **[Project_01.ipynb](https://github.com/gloryodeyemi/COMP_8610_Project_01/blob/main/Project_01.ipynb):** a python notebook that shows the procedure of building, training, and evaluating the MLP model and the results got. It uses the functions in the utils to achieve this.
 
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/gloryodeyemi/COMP_8610_Project_01/blob/main/LICENSE) file for details.
-
-## Authors
-1. Glory Odeyemi
-2. Ashwitha Basani
-3. Subah Ibnat Karim
